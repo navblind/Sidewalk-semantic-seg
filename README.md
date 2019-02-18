@@ -39,39 +39,44 @@ Link:
 
 **Note**: Put the dataset in the parent directory. It should look like this 
 
-Parent Directory
-  |
-  |
-  Cityscape
-      |
-      test
-          |
-          Image 1
-          Image 2
-      |
-      test_labels
-          |  
-          Image 1
-          Image2
-      |
-      |
-      train
-        |
-        Image1 Image2
-      |
-      |
-      train_labels
-      |
-      |
-      val
-      |
-      |
-      val_labels
-      |
-      |
-      classes.csv
+```
+|__Parent Directory
+  |__test
+      |__Image1
+      |__Image2
+      .
+      |__Image647
       
-      
+  |__test_labels
+      |__Image1
+      |__Image2
+      .
+      |__Image647
+  |__train
+      |__Image1
+      |__Image2
+      .
+      |__Image2762
+  |__train_labels
+      |__Image1
+      |__Image2
+      .
+      |__Image2762
+  |__val
+      |__Image1
+      |__Image2
+      .
+      |__Image577
+  |__val_labels
+      |__Image1
+      |__Image2
+      .
+      |__Image577
+  |
+  |__classes.csv
+  
+```
+Note: Make sure classes.csv file exists in place. It is required for the program to run and has the description of the annotated labels. 
 
 ### Dataset attributes
 
