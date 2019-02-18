@@ -33,6 +33,52 @@ All parameters are the same except for frontend
 frontend = ResNet50, ResNet101, ResNet152, MobileNetV2, InceptionV4, SEResNeXt50, SEResNeXt101
 ```
 
+## Link to labeled dataset
+
+Link: 
+
+**Note**: Put the dataset in the parent directory. It should look like this 
+
+Parent Directory
+  |
+  |
+  Cityscape
+      |
+      test
+          |
+          Image 1
+          Image 2
+      |
+      test_labels
+          |  
+          Image 1
+          Image2
+      |
+      |
+      train
+        |
+        Image1 Image2
+      |
+      |
+      train_labels
+      |
+      |
+      val
+      |
+      |
+      val_labels
+      |
+      |
+      classes.csv
+      
+      
+
+### Dataset attributes
+
+Sidewalk color: rgb(0,0,192)
+All other color: rgb(0,0,0)
+
+
 
 
 
