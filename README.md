@@ -13,7 +13,7 @@ num_epochs= Number of epochs to train
 crop_height= 128
 crop_width= 192
 checkpoint_step= Number of epochs to perform before saving latest checkpoint
-dataset= Name of directory with data. Data directory should be in parent directory
+dataset= Camvid, CityScape
 batch_size = Batch size
 model = FC-DenseNet56, FC-DenseNet67, FC-DenseNet103, MobileUNet, MobileUNet-Skip, Encoder-Decoder, Encoder-Decoder-Skip, RefineNet, FRRN-A, FRRN-B, PSPNet, GCN, DeepLabV3, DeepLabV3_plus, AdapNet, DenseASPP, DDSC,  BiSeNet, custom
 ```
