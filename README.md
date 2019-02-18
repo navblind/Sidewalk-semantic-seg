@@ -83,6 +83,10 @@ Note: Make sure classes.csv file exists in place. It is required for the program
 Sidewalk color: rgb(0,0,192)
 All other color: rgb(0,0,0)
 
+## Predicting Res
+```
+python predict.py --crop_height=128 --crop_width=192 --model=ModelName --checkpoint_path=latest_checkpoint_path --image=TestImage.png
+```
 
 
 
