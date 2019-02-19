@@ -35,7 +35,9 @@ frontend = ResNet50, ResNet101, ResNet152, MobileNetV2, InceptionV4, SEResNeXt50
 
 ## Link to labeled dataset
 
-Link: 
+Dataset options:
+* Camvid (1000 images approx): https://drive.google.com/open?id=1oSeHb_7B8nuPdmTpUdiYZjFpD5b2Q7Zw
+* CityScape (8000 images approx): https://drive.google.com/open?id=1mIuBYLQu80QUSRqLGaBEQh0OuYLafQ1r
 
 **Note**: Put the dataset in the parent directory. It should look like this 
 
