@@ -1,0 +1,39 @@
+Welcome to the Mapillary Vistas Dataset (Research edition, v1.1)!
+The public set comprises 20,000 images, out of which 18,000 shall be used for training and the remaining 2,000 for validation. The official test set now contains 5,000 RGB images, see changelog below. We provide pixel-wise labels based on polygon annotations for 66 object classes, where 37 are annotated in an instance-specific manner (i.e. individual instances are labeled separately). The folder structures contain raw RGB images ({training,validation}/images), class-specific labels for semantic segmentation (8-bit with color-palette) ({training,validation}/labels), instance-specific annotations (16-bit) ({training,validation}/instances) and panoptic annotations (24-bit RGB images, {training,validation}/panoptic). Please run 'python demo.py' from the extracted folder to get an idea about how to access label information and for mappings between label IDs and category names.
+
+If you requested access to this dataset for your work as an employee of a company, you and the company will be bound by the license terms. Downloading the dataset implies your acceptance and the company’s acceptance of the terms. By downloading the dataset, you and the company certify that you have understood and accepted the definition of Research Purpose and the restrictions against commercial use as defined in the Mapillary Vistas Dataset Research Use License. A copy of the license terms is part of the downloaded file.
+
+Please cite the following paper if you find Mapillary Vistas helpful for your work:
+
+@InProceedings{MVD2017,
+title=    {The Mapillary Vistas Dataset for Semantic Understanding of Street Scenes},
+author=   {Neuhold, Gerhard and Ollmann, Tobias and Rota Bul\`o, Samuel and Kontschieder, Peter},
+booktitle={International Conference on Computer Vision (ICCV)},
+year=     {2017},
+url=      {https://www.mapillary.com/dataset/vistas}
+}
+
+
+/Mapillary Research, June 26, 2018
+https://research.mapillary.com/
+
+# Changelog
+
+## [1.1] - 2018-06-26
+### Added
+- Panoptic segmentation annotations in {training,validation}/panoptic + corresponding json files, formatted according to COCO definitions from http://cocodataset.org/#format-data (§4, Panoptic Segmentation)
+- Added 4911 RGB test images from v1.0 test set
+- Added further 89 RGB test images to complete 5,000 test set
+
+### Changed
+- Correcting orientation for 9 RGB images by 180° in training/images
+  wQKBmli3PVNgLnvn4lgP6Q.jpg
+  Xp4QBzzqz2P6RByewwM51w.jpg
+  yeCxqrt9b3nabN06KAy7DQ.jpg
+  sj9an531eFVHaWGjRkRiGQ.jpg
+  tK64qZXtSK0AQhUjCSmiMg.jpg
+  drCqjhWopX9omPxc0yo6yw.jpg
+  e4H7NbJiZn7QWuLSpvpVKA.jpg
+  fG1XiWwwhPeT7HT9cDICdw.jpg
+  MM-4wjjF2JySzJppC34xJg.jpg
+- Updated demo.py to document panoptic format
